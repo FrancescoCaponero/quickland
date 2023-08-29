@@ -1,0 +1,6 @@
+#wp-block-spacer-custom {
+    height: 180px;
+    @include breakpoint-md {
+        height: 100px; 
+    }
+}

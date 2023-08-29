@@ -45,7 +45,6 @@ wp_reset_postdata();
     foreach ($sections as $index => $page_data) :
     ?>
         <section <?php if ($index >= 1) echo 'id="section-' . ($index) . '"'; ?>>
-            <h2><?php echo $page_data['title']; ?></h2>
             <?php echo $page_data['content']; ?>
         </section>
     <?php endforeach; ?>

@@ -16,13 +16,18 @@ a {
 .primary-menu{
     a{
         font-weight: 200;
-    }
-    &:nth-child(3){
-        font-weight: bold;
+        &:nth-child(3){
+            font-weight: bold;
+        }
     }
 }
 
-
+.h1-main  {
+    font-size: 2rem !important; 
+    @include breakpoint-md {
+        font-size: 1.5rem !important;
+    }
+}
 
 
 

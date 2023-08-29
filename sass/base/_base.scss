@@ -2,3 +2,24 @@
     background-color: #666776; /* Red background color */
     color: #fff; /* Text color for selected text */
 }
+
+.wp-block-heading, 
+.wp-block-column, 
+p, 
+.wp-block-columns{
+  margin: 0 !important;
+  padding: 0 !important;
+}    
+
+.wp-feature-h1-wrapper{
+  height: 120px !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wp-block-heading{
+    width: 90%;
+    max-width: 1200px;
+    text-align: start;
+  }
+}

@@ -18,5 +18,5 @@ jQuery(document).ready(function($) {
             clearInterval(loadingInterval); // Stop when fully loaded
             hideLoader(); // Hide the loader
         }
-    }, 20); // Adjust the interval for smoother or faster loading
+    }, 10); // Adjust the interval for smoother or faster loading
 });
