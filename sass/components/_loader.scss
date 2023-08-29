@@ -1,0 +1,18 @@
+#loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff; /* Background color for the loader */
+    z-index: 1000;
+    #loader-bar {
+        height: 3px; /* Height of the loading bar */
+        background: #272838; /* Loading bar color (adjust to your preference) */
+        width: 0; /* Initial width is 0 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: width 0.5s ease-in-out; /* Transition for width property */
+    }
+}
+

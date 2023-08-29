@@ -1,0 +1,63 @@
+//clearfix
+@mixin clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+//center
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//center absolute
+@mixin absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* BREAKPOINTS */
+
+@mixin breakpoint-sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+/* BREAKPOINTS USAGE */
+
+/* 
+
+.element {
+    font-size: 14px;
+    
+    @include breakpoint-md {
+        font-size: 16px;
+    }
+}
+
+ */
+

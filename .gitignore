@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+dist
+LICENSE
+screenshot.png
+mix-manifest.json
+composer.json
+phpcs.xml.dist
+readme.txt
+style-rtl.css

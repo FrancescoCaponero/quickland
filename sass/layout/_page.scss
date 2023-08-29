@@ -1,0 +1,12 @@
+
+#page{
+	@include flex-center;
+	flex-direction: column;
+	position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+}

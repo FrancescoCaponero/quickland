@@ -1,0 +1,32 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: $primary-color !important; /* Set the color for visited links */
+    }
+}
+
+.primary-menu{
+    a{
+        font-weight: 200;
+    }
+    &:nth-child(3){
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
