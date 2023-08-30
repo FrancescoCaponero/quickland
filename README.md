@@ -57,6 +57,20 @@ Compile your SCSS into CSS using Laravel Mix. Run the following command:
 npx mix watch
 ```
 
+### ADDITIONAL CSS CLASS(ES) to add in wp-admin for styling
+
+```bash
+.wp-main-wrapper
+.wp-main-wrapper-flexcol
+.wp-block-main-col
+.wp-main-wrapper-col
+.md-pd-y
+.l-pd-y
+.xl-pd-y
+.xxl-pd-y
+.xxxl-pd-y
+```
+
 ### Contributing
 Contributions to the QuickLand theme are welcome! If you have suggestions, improvements, or bug fixes, please feel free to open an issue or submit a pull request.
 

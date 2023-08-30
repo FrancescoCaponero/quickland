@@ -45,10 +45,27 @@ wp_reset_postdata();
     foreach ($sections as $index => $page_data) :
     ?>
         <section <?php if ($index >= 1) echo 'id="section-' . ($index) . '"'; ?>>
-            <?php echo $page_data['content']; ?>
+            <?php
+            // Output the page content
+            echo $page_data['content'];
+
+            // Check if this is the last section
+            if ($index === count($sections)) {
+                // Parse and render blocks within the last section
+                $blocks = parse_blocks($page_data['content']);
+                foreach ($blocks as $block) {
+                    // Check if this block is "Social Icons"
+                    if ($block['blockName'] === 'core/social-links') {
+                        // Render the block
+                        echo render_block($block);
+                    }
+                }
+            }
+            ?>
         </section>
     <?php endforeach; ?>
 </main><!-- #main -->
 
 <?php
 get_footer();
+?>
