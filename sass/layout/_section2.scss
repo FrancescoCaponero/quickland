@@ -1,0 +1,24 @@
+#section-2{
+    margin-top: 8rem;
+        .wp-block-heading,img{
+            padding: 3.2rem 14rem !important;
+            strong{
+                font-size: 3.5rem !important;
+            }
+            @include breakpoint-lg{
+                padding: 2.2rem 6rem !important;
+            }
+            @include breakpoint-md{
+                padding: 2rem 3rem !important;
+            }
+            @include breakpoint-sm{
+                padding: 1.9rem 1.2rem !important;
+            }
+        }
+        img{
+            @include breakpoint-sm{
+                padding: 1.9rem 0 !important;
+            }
+        }
+    
+}

@@ -8,3 +8,4 @@ composer.json
 phpcs.xml.dist
 readme.txt
 style-rtl.css
+info.txt

@@ -26,11 +26,18 @@ while ($page_query->have_posts()) : $page_query->the_post();
     // Collect page data into an array
     $page_data = array(
         'title' => get_the_title(),
-        'content' => get_the_content(),
+        'content' => '',
     );
 
     // Append page data to the sections array
     $sections[] = $page_data;
+
+    // Store the content of the last section
+    if ($index === count($sections)) {
+        ob_start(); // Start output buffering
+        the_content();
+        $sections[$index - 1]['content'] = ob_get_clean(); // Store the content and stop output buffering
+    }
 
     $index++; // Increment index
 endwhile;
@@ -48,19 +55,6 @@ wp_reset_postdata();
             <?php
             // Output the page content
             echo $page_data['content'];
-
-            // Check if this is the last section
-            if ($index === count($sections)) {
-                // Parse and render blocks within the last section
-                $blocks = parse_blocks($page_data['content']);
-                foreach ($blocks as $block) {
-                    // Check if this block is "Social Icons"
-                    if ($block['blockName'] === 'core/social-links') {
-                        // Render the block
-                        echo render_block($block);
-                    }
-                }
-            }
             ?>
         </section>
     <?php endforeach; ?>

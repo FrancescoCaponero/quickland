@@ -3,54 +3,36 @@
     color: #fff; /* Text color for selected text */
 }
 
-.wp-block-heading, 
-.wp-block-column, 
-p, 
-.wp-block-columns{
-  margin: 0 !important;
-  padding: 0 !important;
-}    
+.pointer{
+    cursor: pointer !important;
+}
 
-.wp-main-wrapper{
-  width: 100% !important;
-  display: flex  !important;
-  align-items: center !important;
-  justify-content: center !important;
+b, strong {
+    font-weight: bold !important;
 }
-.wp-main-wrapper-flexcol{
-  width: 100% !important;
-  display: flex  !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-direction: column !important;
-}
-.wp-block-main-col{
-  width: 90% !important;
-  max-width: 1200px !important;
-}
-.wp-main-wrapper-col{
-  width: 100% !important;
-  display: flex!important;
-  align-items: center!important;
-  justify-content: center!important;
-  .wp-block-main-col{
-    width: 90%!important;
-    max-width: 1200px !important;
+
+/* Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+    @include breakpoint-md{
+        display: none;
+    }
   }
-}
-
-.md-pd-y{
-  padding: 3.5rem 0rem !important;
-}
-.l-pd-y{
-  padding: 4rem 0rem !important;
-}
-.xl-pd-y{
-  padding: 8rem 0rem !important;
-}
-.xxl-pd-y{
-  padding: 12rem 0rem !important;
-}
-.xxxl-pd-y{
-  padding: 16rem 0rem !important;
-}
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #989fce; /* Set the color of the scrollbar thumb */
+  }
+  
+  /* Firefox */
+  /* Note: Firefox uses a different approach to scrollbar styling */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
+  /* Set the color of the scrollbar thumb and track in Firefox */
+  

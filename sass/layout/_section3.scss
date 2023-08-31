@@ -1,0 +1,20 @@
+#section-3{
+    .wp-block-columns{
+        padding: 10rem 14rem !important;
+        margin-bottom: 0 !important;
+        gap: 0 !important;
+        @include breakpoint-md{
+            padding:4rem 2rem !important;
+        }
+        @include breakpoint-sm{
+            padding:6rem 1.2rem !important;
+        }
+        .wp-block-column{
+            &:last-child{
+                @include breakpoint-sm{
+                    margin-top:3rem;
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,34 @@
 
 #page{
-	@include flex-center;
-	flex-direction: column;
-	position: relative;
     &::before{
         content: '';
         display: block;
         width: 100%;
         height: 100px;
+    }
+    main{
+        section{
+            &:first-child{
+                h1{
+                    padding: 0rem 4rem !important;
+                }
+            }
+        }
+    }
+}
+
+.front-style{
+    height: 80vh;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    @include breakpoint-md{
+        height: 67vh;
+    }
+    h1{
+        transform: translateY(-50px);
+        @include breakpoint-md {
+            transform: translateY(-70px);
+        }
     }
 }

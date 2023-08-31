@@ -1,0 +1,22 @@
+#section-4{
+    .wp-block-columns {
+        margin: 0 !important;
+        padding: 8rem 14rem !important;
+        gap: 0 !important;
+        @include breakpoint-lg{
+            padding: 8rem 6rem !important;
+        }
+        @include breakpoint-md{
+            padding: 4rem 3rem !important;
+        }
+        @include breakpoint-sm{
+            padding: 6rem 1.2rem !important;
+        }
+    }
+    h5{
+        margin: 3rem 0 !important;
+    }
+    p{
+        margin: 0 !important;
+    }
+}
